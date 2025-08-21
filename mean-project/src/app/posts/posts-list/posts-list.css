@@ -1,0 +1,41 @@
+.info-text{
+
+    text-align: center;
+}
+
+.post-image{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.post-image img{
+   width: 80%;
+   box-shadow: 1px 1px 12px #333;
+   
+}
+
+/* mat-paginator{
+
+    width: 80%;
+
+} */
+
+.container{
+  /* display: flex; */
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  max-width: 500px;
+  margin: auto;
+  
+
+}
+
+mat-expansion-panel {
+
+    margin-bottom: 3px;
+    width: 100%;
+    /* max-width: 600px; */
+}

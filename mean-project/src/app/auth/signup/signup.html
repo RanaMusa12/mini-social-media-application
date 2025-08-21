@@ -1,0 +1,17 @@
+<!-- <textarea rows="6" [value]="newPost" #postInput></textarea> -->
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    
+    <form  (submit)="onSignup(Form)" #Form="ngForm" *ngIf = "!isLoading" >
+        <h1>Sign Up</h1>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="email" name="email" ngModel matInput #emailInput="ngModel" required email>
+            <mat-error *ngIf="emailInput.invalid">please enter a valid email</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>password</mat-label>
+           <input matInput type="password" name="password" ngModel #passwordInput="ngModel" required="password" minlength="6">
+            <mat-error *ngIf="passwordInput.invalid" >invalid password minlength 6</mat-error>
+        </mat-form-field>
+        <button type="submit" matButton="filled"  color="primary">signup</button>
+    </form>

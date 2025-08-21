@@ -1,0 +1,45 @@
+mat-card{
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+textarea, mat-form-field{
+    width: 100%;
+}
+button{
+
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+
+    background-color: transparent !important;
+}
+
+mat-spinner{
+   margin: auto; 
+}
+
+.file{
+
+    visibility: hidden;
+}
+.image-preview{
+
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-preview img{
+    height: 100%;
+}
